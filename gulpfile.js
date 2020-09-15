@@ -571,7 +571,7 @@ const generateView = () => {
       categories: categories,
       codelabs: codelabs,
       ga: ga,
-      showcats: categories.length > 1,
+      showcats: true,
       view: view,
       views: all.views,
 
