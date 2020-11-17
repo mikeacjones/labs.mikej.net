@@ -12,3 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install
       - run: gulp dist --codelabs ./codelabs
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          cname: labs.mikej.net
