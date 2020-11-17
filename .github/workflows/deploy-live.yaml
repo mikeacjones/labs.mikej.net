@@ -11,8 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: npm install
-      - run: gulp dist --codelabs ./codelabs
-      - run: mv -f ./codelabs ./dist/
+      - run: gulp dist --codelabsDir ./codelabs
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
