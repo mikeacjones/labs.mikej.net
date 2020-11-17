@@ -80,9 +80,33 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 </paper-tabs>
 </div><paper-dropdown-menu label="Filter by category" class="dropdown-filter" no-label-float noink no-animations>
 <paper-listbox id="categorylist" slot="dropdown-content" class="dropdown-content" on-iron-activate="onCategoryActivate" attr-for-selected="filter">
+<paper-item filter="Anypoint MQ">Anypoint MQ</paper-item>
+<paper-item filter="DevOps">DevOps</paper-item>
 </paper-listbox>
 </paper-dropdown-menu></div>
 <card-sorter id="cards" class="site-width">
+<a href="/codelabs/async-notification-api-workshop/index.html?index=..%2F..index" on-tap="navigate" class="codelab-card category-anypoint-mq" data-category="Anypoint MQ" data-title="Anypoint MQ Notification Demo" data-duration="0" data-updated="2020-11-16T20:01:13Z" data-tags="web" data-pin="">
+<div class="description">Anypoint MQ Notification Demo</div>
+<div class="card-duration">
+<span></span>
+<span>Updated Nov 16, 2020</span>
+</div>
+<div class="card-footer">
+<div class="category-icon anypoint-mq-icon"></div>
+<paper-button class="anypoint-mq-bg">Start</paper-button>
+</div>
+</a>
+<a href="/codelabs/cicd-github-actions/index.html?index=..%2F..index" on-tap="navigate" class="codelab-card category-devops" data-category="DevOps" data-title="CICD with GitHub Actions" data-duration="0" data-updated="2020-09-15T22:23:14Z" data-tags="web" data-pin="">
+<div class="description">CICD with GitHub Actions</div>
+<div class="card-duration">
+<span></span>
+<span>Updated Sep 15, 2020</span>
+</div>
+<div class="card-footer">
+<div class="category-icon devops-icon"></div>
+<paper-button class="devops-bg">Start</paper-button>
+</div>
+</a>
 </card-sorter>
 <div id="loading-placeholder" class="site-width">
 Loading Codelabs, please wait...
