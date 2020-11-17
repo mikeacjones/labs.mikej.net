@@ -3,3 +3,12 @@ name: deploy-testing
 on:
   push:
     branches: dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install
+      - run: gulp dist --codelabs ./codelabsß
